@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body bgcolor="black">
+
+    <header class="header">
+        <a href="#" class="logo"><img src="images/logo.png" height="60px" width="60px"></a>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="menu.html" style="color: orangered;">MENU</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="cart.html">CART</a>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <a href="login.html" id="search-btn">Login</a>
+        </nav>
+    </header>
+
+    <div class="menu">
+        <h1 class="heading" style="color: white; text-align:center; ">Our <span>MENU</span></h1><br>
+        <hr style="color: white; margin-left:10px; align-items:center;"><BR><br>
+        <h1 style="color: rgb(14, 142, 72); text-align:center; ">DRINKS</h1>
+        <div class="box-container">
+            <!-- <div class="menu-items">
+
+                <br>
+                <img src="images/CafeEspresso.jpg" height="200px" width="200px" id="card">
+                <h2 class="coff">1.Espresso</h2>
+                <p style="color:white; padding-left: 20px;">-----------------------------</p>
+                <p style="color:white; padding-left: 60px;">₹1250 </p>
+                <br>
+                <button class="img-btn" >ADD TO CARD</button>
+            </div> -->
+
+
+            <div class="menu-items">
+                <br>
+                <img src="images/CafeEspresso.jpg" height="200px" width="200px" id="card">
+                <h2 class="coff">1. Espresso</h2>
+                <p style="color:white; padding-left: 20px;">-----------------------------</p>
+                <p style="color:white; padding-left: 60px;">₹1250 </p>
+                <br>
+                <button class="img-btn" onclick="addToCart('Espresso', 1250)">ADD TO CART</button>
+            </div>
+
+            <div class="menu-items">
+                <br>
+                <img src="images/Cappuccino.jpg" height="200px" width="200px" class="card">
+                <h2 class="coff">2.Cappuccino</h2>
+                <p style="color:white; padding-left: 20px;">-----------------------------</p>
+                <p style="color:white; padding-left: 60px;">₹1500 </p>
+                <br>
+                <button class="img-btn" onclick="addToCart('Cappuccino', 1500)">ADD TO CARD</button>
+            </div>
+            
+            <div class="menu-items">
+                <br>
+                <img src="images/expresso-cortado.jpg" height="200px" width="200px" class="card">
+                <h2 class="coff">3.Cortado</h2>
+                <p style="color:white; padding-left: 20px;">-----------------------------</p>
+                <p style="color:white; padding-left: 60px;">₹1600 </p>
+                <br>
+                <button class="img-btn" onclick="addToCart('Cortado', 1600)">ADD TO CARD</button>
+            </div>
+            <div class="menu-items">
+                <br>
+                <img src="images/latte.webp" height="200px" width="200px" class="card">
+                <h2 class="coff">4.latte</h2>
+                <p style="color:white; padding-left: 20px;">-----------------------------</p>
+                <p style="color:white; padding-left: 60px;">₹1000 </p>
+                <br>
+                <button class="img-btn" onclick="addToCart('latte', 1000)">ADD TO CARD</button>
+            </div>
+
+        </div>
+
+        <div class="box-container">
+            <div class="menu-items">
+                <br>
+                <img src="images/lungo.png" height="200px" width="200px" class="card">
+                <h2 class="coff">lungo</h2>
+                <p style="color:white; padding-left: 20px;">-----------------------------</p>
+                <p style="color:white; padding-left: 60px;">₹2000 </p>
+                <br>
+                <button class="img-btn" onclick="addToCart('lungo', 2000)">ADD TO CARD</button>
+            </div>
+            <div class="menu-items">
+                <br>
+                <img src="images/ristretto.jpg" height="200px" width="200px" class="card">
+                <h2 class="coff">ristretto</h2>
+                <p style="color:white; padding-left: 20px;">-----------------------------</p>
+                <p style="color:white; padding-left: 60px;">₹1000 </p>
+                <br>
+                <button class="img-btn" onclick="addToCart('ristretto', 1000)">ADD TO CARD</button>
+            </div>
+            <div class="menu-items">
+                <br>
+                <img src="images/frappuchino.jpg" height="200px" width="200px" class="card">
+                <h2 class="coff">frappuchino</h2>
+                <p style="color:white; padding-left: 20px;">-----------------------------</p>
+                <p style="color:white; padding-left: 60px;">₹1600 </p>
+                <br>
+                <button class="img-btn" onclick="addToCart('frappuchino', 1600)">ADD TO CARD</button>
+            </div>
+            <div class="menu-items">
+                <br>
+                <img src="images/iced-coffee.JPG" height="200px" width="200px" class="card">
+                <h2 class="coff">iced-coffee</h2>
+                <p style="color:white; padding-left: 20px;">-----------------------------</p>
+                <p style="color:white; padding-left: 60px;">₹1000 </p>
+                <br>
+                <button class="img-btn" onclick="addToCart('iced-coffee', 1000)">ADD TO CARD</button>
+            </div>
+
+        </div>
+        <br><br>
+        <hr>
+        <br>
+        <br>
+        <h1 style="color: rgb(14, 142, 72); text-align:center; ">FOODS / SNACKS</h1>
+
+         <h3 style="color: rgb(232, 240, 236); text-align:center;padding-top:30px;">Butter Croissant</h3>
+         <h3 style="color: rgb(232, 240, 236); text-align:center;padding-top:10px;">Bacon, Sausage & Egg Wrap</h3>
+         <h3 style="color: rgb(232, 240, 236); text-align:center;padding-top:10px;">Chicken, Maple Butter & Egg Sandwich</h3>
+         <h3 style="color: rgb(232, 240, 236); text-align:center;padding-top:10px;">Pineapple Cloud Cake || Iced Lemon Loaf</h3>
+         <h3 style="color: rgb(232, 240, 236); text-align:center;padding-top:10px;">Double Chocolate Brownie || Chocolate Chip Cookie</h3>
+         <h3 style="color: rgb(232, 240, 236); text-align:center;padding-top:10px;">Pumpkin & Pepita Loaf || Banana Walnut & Pecan Loaf</h3>
+         <h3 style="color: rgb(232, 240, 236); text-align:center;padding-top:10px;">Vanilla Biscotti with Almonds || Shortbread Cookies || crispy chips</h3>   
+        </div>
+    <br>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div style="width: 50%; padding-left: 350px;">
+                <h3 style="color:black ; font-weight:bold; font-size:20px;">Company</h3>
+                <ul style="padding-top: 10px; ">
+                    <li style="padding-top: 5px; "><a href="about.html" style="color:white">About Us</a></li>
+                    <li style="padding-top: 5px; ">Our Services</li>
+                    <li style="padding-top: 5px; ">Contact us</li>
+                </ul>
+            </div>
+            <div style="width: 25%; padding-left:100px;">
+                <h3 style="font-weight:bold; font-size:20px;">Follow Us</h3>
+                <ul style="padding-top: 10px; ">
+                    <li style="padding-top: 5px;">facebook</li>
+                    <li style="padding-top: 5px; ">insta</li>
+                    <li style="padding-top: 5px; ">twitter</li>
+                </ul>
+
+            </div>
+            <div class="subscribe">
+                <h3 style="font-weight:bold; font-size:20px;">Subscribe and Stay Updated</h3>
+                <br>
+                <p id="news">Join our email newsletter for exclusive deals,
+                    Compass news, and early access to our most exciting
+                    new blends. Plus, get a special reward just for signing up!</p>
+                <br>
+                <input type="text" placeholder="Enter Your Email" class="input-email">
+                <button type="button" id="sub-btn">Subscribe</button>
+            </div>
+        </div>
+        <h5 style="text-align: center; font-size:20px">© 2024, Star Cafe</h5>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+
+</html>

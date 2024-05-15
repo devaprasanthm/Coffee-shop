@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="login">
+        <form>
+            <h2>Log in Here</h2>
+            <p>Email</p>
+            <input type="email" placeholder="User ID">
+            <p>
+                password
+            </p>
+            <input type="password" placeholder="Enter Your Password">
+            <input type="submit" value="Log In">
+            <a href="#">Forget password</a>
+        </form>
+    </div>
+</body>
+</html>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background: url(images/login-image.jpg);
+       background-size:cover;
+       font-family: sans-serif;
+    }
+    .login{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform:translate(-50%,-50%);
+        width:350;
+        height: 420;
+        padding: 60px 30px;
+        box-sizing: border-box;
+        background: rgba(0 0 0 0.1);
+        padding-bottom: 5%;
+        padding-top: 50px;
+    }
+    h2{
+        margin: 0;
+        padding: 0 0 40px;
+        font-weight: bold;
+        color: #f3e541;
+        text-align: center;
+    }
+    .login p{
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        color: #fff;
+    }
+    .login input{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .login input[type="email"],.login input[type="password"]{
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        color: #fff;
+        height: 40px;
+        font-size: 16px;
+
+    }
+    .login input[type="submit"]{
+        border: none;
+        outline: none;
+        height: 40px;
+        color:#fff;
+        font-size: 16px;
+        background: rgb(149 125 97);
+        cursor: pointer;
+        border-radius: 20px;
+    }
+    .login input[type="submit"]:hover{
+        background: rgb(83,80,77);
+        color: #fff;
+    }
+    .login a{
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    ::placeholder{
+        color:rgba(255,255,255,0.5)
+    }
+</style>
